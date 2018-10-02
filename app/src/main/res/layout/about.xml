@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:focusable="true"
+        android:theme="@style/toolbar"
+        android:focusableInTouchMode="true">
+        <TextView
+            android:id="@+id/bartext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About Application"
+            android:textSize="24sp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal" />
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="30dp"
+                android:text="@string/app_name"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@android:color/white"
+                android:textStyle="normal|bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="20dp"
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Version     :  "
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@android:color/white"
+                    android:textStyle="normal|bold" />
+
+                <TextView
+                    android:id="@+id/version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:text="V.1.10"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@android:color/white"
+                    android:textStyle="normal|bold" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/newappicon" />
+
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:paddingTop="20dp"
+                android:text="This  Mileage Calculator application is used to calculate fuel price, Travel Kilometer, Total fuel used, Vehicle Mileage, Total fuel Price and price for one KM. You can save the calculation too for your future reference. \n"
+                android:textAlignment="center"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/editboxshape"
+                android:padding="15dp"
+                android:text=" Developed By Prasanth \n KPUT Software"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="normal|bold" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

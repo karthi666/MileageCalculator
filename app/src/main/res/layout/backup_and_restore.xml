@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:focusable="true"
+        android:theme="@style/toolbar"
+        android:focusableInTouchMode="true">
+        <TextView
+            android:id="@+id/bartext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Backup / Restore"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold"
+            android:textIsSelectable="true"
+            android:layout_gravity="center_horizontal" />
+    </android.support.v7.widget.Toolbar>
+
+    <Button
+        android:layout_margin="50dp"
+        android:id="@+id/btnbackup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|center_horizontal"
+        android:layout_marginLeft="4sp"
+        android:layout_marginRight="4sp"
+        android:background="@drawable/buttonshape"
+        android:padding="2dp"
+        android:text="@string/backup"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/ssize" />
+
+    <Button
+        android:layout_margin="50dp"
+        android:id="@+id/btnrestore"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|center_horizontal"
+        android:layout_marginLeft="4sp"
+        android:layout_marginRight="4sp"
+        android:background="@drawable/buttonshape"
+        android:padding="2dp"
+        android:text="@string/restore"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/ssize" />
+
+    <TextView
+        android:id="@+id/bkplocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/textsize"
+        android:text=""
+        android:textColor="@color/red"
+        android:textSize="@dimen/ssize"
+        android:textStyle="bold"
+
+        android:layout_weight="1"/>
+
+
+    <Button
+        android:text="Close"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="bottom|center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonshape"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/ssize"
+        android:id="@+id/btnclose" />
+
+
+
+</LinearLayout>

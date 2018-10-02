@@ -1,0 +1,593 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+      android:orientation="vertical">
+
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="50sp"
+        android:focusable="true"
+        android:theme="@style/toolbar"
+        android:focusableInTouchMode="true">
+        <ImageView
+
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            app:srcCompat="@drawable/newappicon"
+            android:id="@+id/imageView2"
+            android:layout_width="53sp" />
+
+        <TextView
+            android:id="@+id/bartext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textSize="@dimen/textsize"
+            android:padding="2dp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#FFFFFF" />
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:paddingTop="10sp"
+        android:paddingBottom="2dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Note: Enter Any two/three Value. \n To get other values"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="60sp"
+            android:id="@+id/tnote"
+            android:gravity="center"
+            android:textSize="@dimen/nsize"
+            android:textColor="@android:color/holo_red_dark"
+            android:background="@android:color/white"
+            android:textStyle="normal|italic"
+            android:textAlignment="center" />
+        <Button
+            android:text="Fuel Refill"
+            android:layout_width="wrap_content"
+            android:id="@+id/refillold"
+            android:visibility="gone"
+            android:background="@drawable/buttonshape"
+            android:textColor="#FFFFFF"
+            android:layout_height="60sp"
+            android:layout_marginLeft="4sp"
+            android:layout_marginRight="4sp"
+            android:textAllCaps="false"
+            android:textSize="@dimen/ssize"
+            android:padding="2dp"
+            android:layout_weight="1"
+            android:layout_gravity="end|center_horizontal" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="2dp"
+        android:paddingTop="10sp">
+
+        <Button
+            android:id="@+id/affiliate"
+            android:layout_width="wrap_content"
+            android:layout_height="60sp"
+            android:layout_gravity="end|center_horizontal"
+            android:layout_marginLeft="4sp"
+            android:layout_marginRight="4sp"
+            android:layout_weight="1"
+            android:background="@drawable/buttonshape"
+            android:clickable="false"
+            android:padding="2dp"
+            android:text="Accessories"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/ssize"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/refill"
+            android:layout_width="wrap_content"
+            android:layout_height="60sp"
+            android:layout_gravity="end|center_horizontal"
+            android:layout_marginLeft="4sp"
+            android:layout_marginRight="4sp"
+            android:layout_weight="1"
+            android:background="@drawable/buttonshape"
+            android:padding="2dp"
+            android:text="@string/fuellog"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/ssize" />
+
+    </LinearLayout>
+
+    <TextView
+        android:text="Click Travel KM/Mile to Enter Meter reading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ttravelnote"
+        android:layout_gravity="center"
+        android:textSize="@dimen/nsize"
+        android:textColor="@android:color/holo_red_dark"
+        android:background="@android:color/white"
+        android:textStyle="normal|italic"
+        android:textAlignment="center" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:layout_gravity="center_horizontal"
+            android:focusableInTouchMode="true"
+            android:paddingLeft="1sp"
+            android:paddingRight="1sp"
+            android:paddingBottom="8sp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:paddingTop="20sp"
+                android:layout_gravity="center_horizontal"
+                android:paddingBottom="10sp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tfuelprice"
+                        android:text="@string/fuelprice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/textsize"
+                        android:padding="2dp"
+
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/ttravelkm"
+                        android:text="@string/travelkilometer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/textsize"
+                        android:padding="2dp"
+                        android:textColor="#FFFFFF"
+                        android:background="@color/colorAccent"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/ttotalfuelused"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:text="@string/totalfuelused"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/textsize"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvechiclemileage"
+                        android:text="@string/vechiclemileage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/textsize"
+                        android:padding="2dp"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/ttotalfuelprice"
+                        android:text="@string/totalfuelprice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/textsize"
+                        android:padding="2dp"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/cfuelprice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:textSize="@dimen/textsize"
+                        android:padding="2dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/ctravelkm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+
+                        android:textSize="@dimen/textsize"
+                        android:padding="2dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:id="@+id/ctotalfuelused"
+                        android:textSize="@dimen/textsize"
+                        android:padding="2dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/cvechiclemileage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/textsize"
+                        android:padding="2dp"
+                        android:text=":"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:id="@+id/ctotalfuelprice"
+
+                        android:textSize="@dimen/textsize"
+                        android:padding="2dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:background="@drawable/editboxshape"
+                        android:paddingStart="8dp"
+                        android:paddingLeft="8dp"
+                        android:hint="70.00"
+                        android:textColorHint="@color/mhc"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/textsize"
+                        android:padding="2dp"
+                        android:id="@+id/fuelprice" />
+                    <EditText
+                        android:textColorHint="@color/mhc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:hint="440.00"
+                        android:textStyle="bold"
+                        android:background="@drawable/editboxshape"
+                        android:paddingStart="8dp"
+                        android:paddingLeft="8dp"
+                        android:textSize="@dimen/textsize"
+                        android:padding="2dp"
+                        android:id="@+id/travelkilometer" />
+
+                    <EditText
+                        android:textColorHint="@color/mhc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:hint="20.00"
+                        android:textStyle="bold"
+                        android:background="@drawable/editboxshape"
+                        android:paddingStart="8dp"
+                        android:paddingLeft="8dp"
+                        android:textSize="@dimen/textsize"
+                        android:padding="2dp"
+                        android:id="@+id/fuelused" />
+
+                    <EditText
+                        android:textColorHint="@color/mhc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:hint="22.00"
+                        android:textStyle="bold"
+                        android:background="@drawable/editboxshape"
+                        android:paddingStart="8dp"
+                        android:paddingLeft="8dp"
+                        android:textSize="@dimen/textsize"
+                        android:padding="2dp"
+                        android:id="@+id/mileage" />
+                    <EditText
+                        android:textColorHint="@color/mhc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:hint="1400.00  "
+                        android:textStyle="bold"
+                        android:background="@drawable/editboxshape"
+                        android:paddingStart="8dp"
+                        android:paddingLeft="8dp"
+                        android:textSize="@dimen/textsize"
+                        android:padding="2dp"
+                        android:id="@+id/totalprice"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:text="Rsoop"
+                        android:id="@+id/vfuelprice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/textsize"
+                        android:padding="2dp"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:text="KM"
+                        android:id="@+id/vtravelkm"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/textsize"
+                        android:padding="2dp"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:text="Ltr"
+                        android:id="@+id/vtotalfuelused"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/textsize"
+                        android:padding="2dp"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:text="KM/L"
+
+                        android:id="@+id/vvechiclemileage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/textsize"
+                        android:padding="2dp"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:text="Rs"
+
+                        android:id="@+id/vtotalfuelprice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/textsize"
+                        android:padding="2dp"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:text="@string/calculate"
+                android:layout_width="match_parent"
+                android:id="@+id/calculate"
+                android:layout_marginTop="10sp"
+                android:background="@drawable/buttonshape"
+                android:textColor="#FFFFFF"
+                android:layout_height="60sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textAllCaps="true"
+                android:textSize="@dimen/ssize"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:padding="10sp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text=""
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    android:background="@drawable/editboxshape"
+                    android:paddingStart="10sp"
+                    android:paddingLeft="10sp"
+                    android:textColor="@color/black"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:id="@+id/value1"/>
+                <TextView
+                    android:text=""
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+
+                    android:visibility="gone"
+                    android:background="@drawable/editboxshape"
+                    android:paddingStart="10sp"
+                    android:paddingLeft="10sp"
+                    android:textColor="@color/black"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:id="@+id/value2" />
+                <TextView
+                    android:text=""
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+
+                    android:visibility="gone"
+                    android:background="@drawable/editboxshape"
+                    android:paddingStart="10sp"
+                    android:paddingLeft="10sp"
+                    android:textColor="@color/black"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:id="@+id/value3" />
+            </LinearLayout>
+
+
+
+      <LinearLayout
+            android:orientation="horizontal"
+            android:paddingTop="10sp"
+            android:paddingBottom="2dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:text="@string/save"
+                android:layout_width="wrap_content"
+                android:id="@+id/save"
+                android:background="@drawable/buttonshape"
+                android:textColor="#FFFFFF"
+                android:layout_height="60sp"
+                android:layout_marginLeft="4sp"
+                android:layout_marginRight="4sp"
+                android:textAllCaps="false"
+                android:textSize="@dimen/ssize"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:layout_gravity="end|center_horizontal" />
+
+          <Button
+              android:id="@+id/clear"
+              android:layout_width="wrap_content"
+              android:layout_height="60sp"
+              android:layout_gravity="end|center_horizontal"
+              android:layout_marginLeft="4sp"
+              android:layout_marginRight="4sp"
+              android:layout_weight="1"
+              android:background="@drawable/buttonshape"
+              android:padding="2dp"
+              android:text="@string/clear"
+              android:textAllCaps="false"
+              android:textColor="#FFFFFF"
+              android:textSize="@dimen/ssize" />
+
+      </LinearLayout>
+
+       <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:id="@+id/aads"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/pimage"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true">
+                </ImageView>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="2dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/product"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textStyle="bold"
+                        android:text="Sun Shade 4Pc for car sdjflasjdfkl"
+                        android:textColor="@color/black"
+
+                        android:singleLine="true"
+                        android:ellipsize="marquee"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:scrollHorizontally="true"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:freezesText="true"/>
+
+                    <TextView
+                        android:id="@+id/productdetail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="This will help to Reduce  heat inside the car. So Less use of AC and save fuel" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="Rs 150"
+                        android:textColor="@color/red"/>
+
+                    <ImageView
+                        android:id="@+id/imagebuy"
+                        android:layout_width="100dp"
+                        android:layout_height="70dp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <com.google.android.gms.ads.AdView
+                android:id="@+id/adview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                ads:adSize="LARGE_BANNER"
+                ads:adUnitId="@string/mainpage">
+            </com.google.android.gms.ads.AdView>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

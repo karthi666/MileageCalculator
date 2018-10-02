@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:focusable="true"
+        android:theme="@style/toolbar"
+        android:focusableInTouchMode="true">
+        <TextView
+            android:id="@+id/bartext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal" />
+    </android.support.v7.widget.Toolbar>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:padding="@dimen/textsize"
+        android:layout_weight="1"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_marginBottom="@dimen/textsize"
+                android:id="@+id/title"
+                android:text="   How to Use the App    "
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editboxshape"
+                android:padding="10dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/message"
+
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="Enter any Two or Three value which you know,  other value will be get calculated. \n \n
+Example :\n
+    If you enter Fuel price,Travel KM and Mileage. It will calculate the Fuel used and Total fuel price\n\n
+
+    If you know Travel KM and Fuel used. I will calculate Mileage\n\n
+
+Like this you can use any two/three combination to get other values.\n\n
+
+Fuel Log:  you can update fuel refilling  information"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="@dimen/textsize"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+    <Button
+        android:text="Ok"
+        android:layout_width="wrap_content"
+        android:id="@+id/ok"
+        android:background="@drawable/buttonshape"
+        android:textColor="#FFFFFF"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4sp"
+        android:layout_marginRight="4sp"
+        android:textAllCaps="false"
+        android:textSize="@dimen/textsize"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>

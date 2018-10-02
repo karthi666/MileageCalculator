@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Mileage Calculator</string>
+    <string name="tsize">20dp</string>
+    <string name="mainpage">ca-app-pub-1670724620405159/8256954626</string>
+    <string name="banner">ca-app-pub-1670724620405159/8256954626</string>
+    <string name="videoad">ca-app-pub-1670724620405159/9697198223</string>
+    <string name="interstitial">ca-app-pub-1670724620405159/9836799027</string>
+
+    <string name="appname">Mileage Calculator</string>
+
+
+    <array name="fuelmetric">
+        <item name="Litre">Litre</item>
+        <item name="USGallon">US Gallon</item>
+        <item name="ImpGallon">Imperial Gallon</item>
+    </array>
+
+    <array name="lengthmetric">
+        <item name="KiloMeter">Kilo Meter</item>
+        <item name="Mile">Mile</item>
+        <item name="Nautical">Nautical  Mile</item>
+    </array>
+    <array name="language">
+        <item name="english">English</item>
+        <item name="tamil">Tamil</item>
+    </array>
+
+    <!--Main Page-->
+    <string name="fuelprice">Fuel Price</string>
+    <string name="travelkilometer">Travel Kilometer</string>
+    <string name="totalfuelused">Total Fuel Used</string>
+    <string name="vechiclemileage">Vechicle Mileage</string>
+    <string name="totalfuelprice">Total Fuel Price</string>
+    <string name="calculate">Calculate</string>
+    <string name="save">Save</string>
+    <string name="clear">Clear</string>
+    <string name="fuellog">Fuel Log</string>
+
+    <string name="how_to_use_this_app">How to use this App?</string>
+
+
+    <!--
+        <string name="appname">மைலேஜ் கால்குலேட்டர்</string>
+
+        &lt;!&ndash;Main Page&ndash;&gt;
+        <string name="fuelprice">எரிபொருள் விலை</string>
+        <string name="travelkilometer">பயண கிலோமீட்டர்</string>
+        <string name="totalfuelused">மொத்த எரிபொருள் பயன்பாடு</string>
+        <string name="vechiclemileage">வாகன மைலேஜ்</string>
+        <string name="totalfuelprice">மொத்த எரிபொருள் விலை</string>
+        <string name="calculate">கணக்கிட</string>
+        <string name="save">காப்பாற்ற</string>
+        <string name="clear">தெளிவு</string>
+        <string name="fuellog">எரிபொருள் பதிவு</string>
+    -->
+
+</resources>

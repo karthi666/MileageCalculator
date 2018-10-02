@@ -1,0 +1,57 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'karthi66'
+            keyPassword 'karthi66'
+            storeFile file('D:/android/MileageCalculator.jks')
+            storePassword 'karthi66'
+        }
+    }
+    compileSdkVersion 27
+    useLibrary 'org.apache.http.legacy'
+    defaultConfig {
+        applicationId "com.kputsoftware.mileagecalculator"
+        minSdkVersion 14
+        targetSdkVersion 27
+        versionCode 27
+        versionName "V.2.7"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+//    androidTestimplementation('com.android.support.test.espresso:espresso-core:3.0.1', {
+//        exclude group: 'com.android.support', module: 'support-annotations'
+//    })
+
+    testImplementation 'junit:junit:4.12'
+    //noinspection GradleCompatible
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.1'
+
+    implementation 'com.google.firebase:firebase-messaging:17.0.0'
+    implementation 'com.google.firebase:firebase-ads:15.0.1'
+    implementation 'com.google.firebase:firebase-database:16.0.1'
+    implementation 'com.android.support:design:27.1.1'
+}
+
+
+
+
+
+
+apply plugin: 'com.google.gms.google-services'

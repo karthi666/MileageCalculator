@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:theme="@style/toolbar"
+         android:text="Enter Meter Reading"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginBottom="@dimen/nsize"/>
+    <TextView
+        android:id="@+id/tstartkm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start KiloMeter"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/startkm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="26234"
+        android:inputType="number">
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/tendkm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="End KiloMeter"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/endkm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="26866"
+        android:inputType="number">
+    </EditText>
+
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/history"
+        android:icon="@android:drawable/ic_menu_recent_history"
+        android:title="Calculation History"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/refillhistory"
+        android:title="Refill History"
+        app:showAsAction="never" />
+
+
+    <item
+        android:id="@+id/backupandrestore"
+        android:title="Backup / Restore History"
+        app:showAsAction="never" />
+
+    <item android:title="Setting"
+        android:id="@+id/setting"/>
+
+    <item
+        android:id="@+id/share"
+        android:icon="@drawable/shareicon"
+        android:title="Share App"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/rateus"
+        android:icon="@drawable/rateus"
+        android:title="Rate Us 5 Star"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/howtouse"
+        android:icon="@android:drawable/ic_menu_help"
+        android:title="How to Use ?"
+        app:showAsAction="never|withText" />
+    <item
+        android:id="@+id/help"
+        android:icon="@android:drawable/ic_menu_help"
+        android:title="Help / Feedback"
+        app:showAsAction="never|withText" />
+    <item
+        android:id="@+id/moreapps"
+        android:title="More  Apps" />
+    <item
+        android:id="@+id/about"
+        android:icon="@drawable/about"
+        android:title="About" />
+
+</menu>

@@ -1,0 +1,115 @@
+{
+  "project_info": {
+    "project_number": "635262884334",
+    "firebase_url": "https://tools-7c7ae.firebaseio.com",
+    "project_id": "tools-7c7ae",
+    "storage_bucket": "tools-7c7ae.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:635262884334:android:0d16258f10dd80b3",
+        "android_client_info": {
+          "package_name": "com.kputsoftware.mileagecalculator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "635262884334-kgql785elkebg43ud80kuuchcut7c3lh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kputsoftware.mileagecalculator",
+            "certificate_hash": "e4ab0295fc35a06cab79a6631cc59f59dfb2eee5"
+          }
+        },
+        {
+          "client_id": "635262884334-2eu46tf42c9ksoqgnctg4qjrthd6vv3v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kputsoftware.mileagecalculator",
+            "certificate_hash": "78812c3e91f4c91cdc02a888a85deeeedf522ea4"
+          }
+        },
+        {
+          "client_id": "635262884334-48phlkqditbslnc7898clmo4gfnlklot.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "635262884334-48phlkqditbslnc7898clmo4gfnlklot.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1Enz2DPjCttOab7-Qz5KCbslHRPfr41E"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "635262884334-48phlkqditbslnc7898clmo4gfnlklot.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:635262884334:android:80b5419a2e18ddcd",
+        "android_client_info": {
+          "package_name": "com.kputsoftware.vehicleexpense"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "635262884334-k2a47khoh5obogscgpp2ppf5ohfe2fhk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kputsoftware.vehicleexpense",
+            "certificate_hash": "78812c3e91f4c91cdc02a888a85deeeedf522ea4"
+          }
+        },
+        {
+          "client_id": "635262884334-48phlkqditbslnc7898clmo4gfnlklot.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "635262884334-48phlkqditbslnc7898clmo4gfnlklot.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1Enz2DPjCttOab7-Qz5KCbslHRPfr41E"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "635262884334-48phlkqditbslnc7898clmo4gfnlklot.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

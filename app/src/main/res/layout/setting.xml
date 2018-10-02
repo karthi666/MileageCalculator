@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:focusable="true"
+        android:theme="@style/toolbar"
+        android:focusableInTouchMode="true">
+        <TextView
+            android:id="@+id/bartext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="SETTING"
+            android:textSize="@dimen/ssize"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal" />
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+    <LinearLayout
+        android:padding="@dimen/textsize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_marginLeft="@dimen/textsize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Currency   "
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/ssize"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/cfuelprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="   :   "
+            android:textSize="@dimen/ssize"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/currency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/editboxshape"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:hint="RS"
+            android:inputType="textCapCharacters"
+            android:textSize="@dimen/ssize"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="3dip"
+        android:background="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="@dimen/textsize"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/textsize"
+            android:text="All Notification  "
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/ssize"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  :   "
+            android:textSize="@dimen/ssize"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+
+        <ToggleButton
+            android:id="@+id/notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonshape"
+            android:textColor="@color/white"
+            android:textSize="@dimen/ssize"
+            android:layout_weight="1"
+            android:text="ToggleButton" />
+
+    </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingRight="@dimen/textsize"
+                android:paddingLeft="@dimen/textsize"
+                android:paddingBottom="@dimen/textsize"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/textsize"
+                    android:text="Tips Notification "
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/ssize"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" : "
+                    android:textSize="@dimen/ssize"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+
+
+                <ToggleButton
+                    android:id="@+id/tipsnoti"
+                    android:checked="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/buttonshape"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/ssize"
+                    android:layout_weight="1"
+                    android:text="ToggleButton" />
+
+            </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="3dip"
+        android:background="@color/white" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="@dimen/textsize"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/textsize"
+                    android:text="Fuel metric  "
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/ssize"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" : "
+                    android:textSize="@dimen/ssize"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/fuelmetric"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/editboxshape"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:entries="@array/fuelmetric"/>
+
+
+            </LinearLayout>
+
+ <View
+                android:layout_width="fill_parent"
+                android:layout_height="3dip"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="@dimen/textsize"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/textsize"
+                    android:text="Length metric  "
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/ssize"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" : "
+                    android:textSize="@dimen/ssize"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+
+
+                <Spinner
+                    android:id="@+id/lengthmetric"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/editboxshape"
+                    android:layout_height="fill_parent"
+                    android:scrollbarSize="@dimen/ssize"
+                    android:layout_weight="1"
+                    android:entries="@array/lengthmetric"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="3dip"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:padding="@dimen/textsize"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/textsize"
+                    android:text="Language "
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/ssize"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" : "
+                    android:textSize="@dimen/ssize"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+
+
+                <Spinner
+                    android:id="@+id/language"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/editboxshape"
+                    android:layout_height="fill_parent"
+                    android:scrollbarSize="@dimen/ssize"
+                    android:layout_weight="1"
+                    android:entries="@array/language"/>
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+        <Button
+            android:text="Save"
+            android:layout_gravity="bottom|center"
+            android:layout_width="wrap_content"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@drawable/buttonshape"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/ssize"
+            android:id="@+id/save" />
+
+
+</LinearLayout>
